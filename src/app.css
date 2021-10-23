@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(227, 227, 255, 1) 35%, rgba(195, 245, 255, 1) 100%);
+    font-family: 'Patrick Hand', cursive;
+    /* background: rgb(12, 200, 100);
+    background: linear-gradient(90deg, rgba(12, 200, 100, 0.616) 0%, rgba(11, 149, 203, 0.616) 35%, rgba(253, 186, 255, 0.541) 100%); */
+}
+
+.logo>img {
+    width: 50px;
+    text-align: center;
+
+}
+
+.logo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logo_title>h3 {
+    margin: 0px;
+    font-size: 25px;
+    color: darkblue;
+    font-weight: 600;
+}
+
+.logo_title>p {
+    font-size: 18px;
+    color: rgba(0, 0, 139, 0.568);
+}
+
+.logo_title a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+.logo>* {
+    margin: 0px 10px;
+    padding: 0px;
+    text-align: left;
+}
+
+.created_by {
+    padding: 0px;
+    margin: 0;
+}
+
+
+.container {
+    width: 500px;
+    max-width: 98%;
+    margin: 0 auto;
+    /* background: rgb(219, 252, 235);
+    background: linear-gradient(90deg, rgba(219, 252, 235, 1) 0%, rgba(168, 221, 241, 1) 35%, rgba(254, 223, 255, 1) 100%); */
+    /* border: 1px solid rgb(196, 188, 119); */
+    border-radius: 7px;
+}
+
+.box_currency {
+    display: flex;
+    padding: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.box_currency>div {
+    width: 100%;
+    flex: 1;
+    margin: 5px;
+}
+
+.button_swap {
+    text-align: center;
+}
+
+.button_swap>button {
+    background: white;
+    color: rgb(63, 94, 251);
+
+    height: 50px;
+    width: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.8s;
+    box-shadow: 0px 0px 10px rgb(3, 17, 88);
+}
+
+.button_swap>button:hover {
+    box-shadow: 0px 0px 10px rgb(63, 94, 251);
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgb(3, 17, 88) 0%, rgb(2, 86, 97) 100%);
+    color: white;
+}
+
+.curreency_dropdown_list {
+    width: 100%;
+    height: 40px;
+    border: 0.2px;
+    box-shadow: 0px 2px 0px darkblue;
+    outline: none;
+    font-size: 17px;
+    border-right: none;
+    /* text-align: center; */
+    border-radius: 0;
+}
+
+.curreency_dropdown_list option:hover {
+    background-color: thistle;
+    background: thistle;
+    font-size: 18px;
+}
+
+.curreency_dropdown_list::-webkit-scrollbar-thumb {
+    background: rgb(238, 126, 178);
+}
+
+.curreency_dropdown_list::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+.amount_input {
+    width: 100%;
+    height: 38px;
+    border: 0.2px;
+    box-shadow: 0px 2px 0px darkblue;
+    outline: none;
+    font-size: 25px;
+    text-align: center;
+    border-left: none;
+    font-family: monospace;
+    font-weight: 700;
+    border-radius: 0;
+}
+
+.amount_input:placeholder{
+    color: darkblue;
+}
+
+.so_icon {
+    text-align: center;
+}
+
+.so_icon_ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.so_icon_ul a {
+    text-decoration: none;
+}
+
+.so_icon_ul .icon_box {
+    margin: 0 10px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.so_icon_ul .icon_box:hover {
+    box-shadow: 0px 0px 5px darkorange;
+}
+
+.so_icon_ul .icon_box.fb {
+    background: rgb(46, 116, 233);
+    background: linear-gradient(21deg, rgba(46, 116, 233, 1) 0%, rgba(36, 84, 210, 1) 35%, rgba(65, 147, 244, 1) 100%);
+}
+
+
+.so_icon_ul .icon_box.ing {
+    background: rgb(209, 0, 57);
+    background: linear-gradient(21deg, rgba(209, 0, 57, 1) 0%, rgba(204, 2, 87, 1) 35%, rgba(244, 65, 213, 0.896796218487395) 100%);
+}
+
+.so_icon_ul .icon_box.dne {
+    background: rgb(209, 189, 0);
+    background: linear-gradient(90deg, rgba(209, 189, 0, 1) 0%, rgba(204, 110, 2, 1) 35%, rgba(244, 143, 65, 0.896796218487395) 100%);
+}
+
+.so_icon_ul .icon_box.fb:hover {
+    box-shadow: 0px 0px 10px rgb(46, 116, 233);
+}
+
+.so_icon_ul .icon_box.ing:hover {
+    box-shadow: 0px 0px 10px rgb(209, 0, 57);
+}
+
+.so_icon_ul .icon_box.dne:hover {
+    box-shadow: 0px 0px 10px rgb(209, 189, 0);
+}
+
+
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid white;
+    background-color: white;
+}
+
+/* Style the buttons inside the tab */
+.tablinks {
+    outline: none;
+    cursor: pointer;
+    padding: 0px 1px;
+    font-size: 17px;
+    height: 45px;
+    width: 120px;
+    margin: 0 0px;
+    transition: 0.7s;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    font-family: 'Patrick Hand', cursive;
+    font-weight: bold;
+    border-radius: 7px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Change background color of buttons on hover */
+.tablinks:hover {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(227, 227, 255, 1) 35%, rgba(195, 245, 255, 1) 100%);
+    color: rgb(122, 122, 122);
+}
+
+/* Create an active/current tablink class */
+.tablinks.active {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(227, 227, 255, 1) 35%, rgba(195, 245, 255, 1) 100%);
+    color: rgb(122, 122, 122);
+}
+
+/* Style the tab content */
+.tabcontent {
+    /* display: none; */
+    padding: 6px 12px;
+    border: 1px solid white;
+    border-top: none;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+    background-color: white;
+}
+
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.button_swap2{
+    margin: 5px -55px !important;
+}
+
+.amount_input2{
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid black;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    padding: 6px 0;
+    font-size: 20px;
+    border-radius: 0;
+    text-align: center;
+}
+
+.amount_input2:hover{
+    border-bottom: 2px solid rgb(151, 21, 21);
+}
+
+.datalist{
+    padding: 5px;
+}
+
+
+/* tab */
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 300px;
+    width: 500px; */
+    background-color: white;
+}
+
+.tabs label {
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1rem 2rem; */
+    /* margin-right: 0.2rem; */
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: background ease 0.3s;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    border-radius: 0;
+}
+
+.tabs .tab {
+    order: 9;
+    display: none;
+}
+
+.tabs input[type="radio"] {
+    display: none;
+}
+
+.tabs input[type="radio"]:checked+label {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(227, 227, 255, 1) 35%, rgba(195, 245, 255, 1) 100%);
+    color: rgb(122, 122, 122);
+
+}
+
+.tabs input[type="radio"]:checked+label{
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.tabs input[type="radio"]:checked+label+.tab {
+    display: block;
+}
